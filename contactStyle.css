@@ -1,0 +1,116 @@
+body{
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: rgb(220,223,228);
+}
+
+nav {
+    background-color: whitesmoke;
+    display: flex;
+    height: 7vh;
+}
+
+nav img {
+    width: 56px;
+    height: 40px;
+    padding-left: 70px;
+    
+    text-align: center;
+    justify-content: flex-start;
+    display: flex;
+
+}
+
+.nav-left {
+    /*background-color: tomato; */
+    flex: 50%;
+    display: flex;
+    align-items: center;
+}
+
+.nav-left li {
+    display: inline;
+}
+
+.nav-left a {
+    text-decoration: none;
+    margin: 30px;
+    color: black;
+   /* display: flex; */
+}
+
+.home {
+    font-weight: 900;
+}
+
+.my-project {
+    font-weight: 500;
+}
+.home-2 {
+    font-weight: 500;
+}
+
+.my-project-2 {
+    font-weight: 900;
+}
+
+.nav-right {
+    /* background-color: cadetblue;*/
+    flex: 50%;
+    display: flex;
+    justify-content: flex-end;  
+    padding: 11px;
+    padding-right: 150px;
+}
+
+.hi {
+    font-weight: 900;
+}
+
+.nav-right a {
+    text-decoration: none;
+    border: 1px solid white;
+    background-color: black;
+    color: white;
+    border-radius: 8px;
+    padding: 4px  16px;
+    padding-top: 2px;
+    font-size: 15px; 
+    
+}
+
+
+
+.container {
+    height: 93vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(220,223,228);
+}
+
+.container section {
+    background-color: white;
+    display: flex;
+    width: 80%;
+    height: 75%;
+    border-radius: 8px;
+    box-shadow: 0px 0px 5px gray;
+}
+
+.section-left {
+    /* background-color: orange; */
+    width: 60%;
+}
+
+.content-left {
+    padding-left: 75px;
+    padding-top: 50px;
+    padding-right: 0px;
+}
+
+.section-right {
+    /* background-color: aqua; */
+    width: 40%;
+    
+}

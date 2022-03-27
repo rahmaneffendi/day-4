@@ -1,0 +1,296 @@
+<html>
+    <head>
+        <title>My Project</title>
+        <link rel="stylesheet" href="contactStyle.css" >
+        <link rel="stylesheet" href="style.css" >
+        <script src="project.js"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css" 
+        integrity="sha512-10/jx2EXwxxWqCLX/hHth/vu2KY3jCF70dCQB8TSgNjbCVAC/8vai53GfMDrO2Emgwccf2pJqxct9ehpzG+MTw==" 
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    </head>
+    <body>
+        <!-- Awal Navbar -->
+        <nav class="#">
+            <div class="nav-left">
+                <img src="assets/logo-DW.png" />
+                <ul>
+                    <li><a href="index.html" class="home-2">Home</a></li>
+                    <li><a href="project.html" class="my-project-2">My Project</a></li>
+                </ul>
+            </div>
+            
+            <div class="nav-right">
+                <a href="contact.html">Contact Me</a>               
+            </div>
+        </nav>
+        <!-- Akhir Navbar -->
+
+        <!--Awal input blog-->
+        <section>
+            <h2 >ADD MY PROJECT</h2>
+            <form class="form" onsubmit="addProject(event)">
+
+                <div style="margin-bottom: 25px;">
+                    <label for="input-project-name">Project Name</label>
+                    <input class="project-name" type="text" id="input-project-name">
+                </div>
+
+                <div class="input-durasi" style="display: flex;">
+                    <div >
+                        <label>Start Date</label>
+                        <input type="text" id="input-start-date">
+                    </div>
+                    
+                    <div class="input-durasi-2">
+                        <label>End Date</label>
+                        <input type="text" id="input-end-date">
+                    </div>
+                </div>
+
+                <div class="inputDesc" >
+                    <label >Description</label>
+                    <textarea class="areaDesc" id="input-project-desc"></textarea>
+                </div>
+
+                <div class="inputCheckbox" >
+                    <label>Technologies</label>
+                    <div  style="display: flex; gap: 100px; color: rgb(75, 72, 72); ">
+                        <div style="padding-top: 15px;">
+                            <div style="padding-bottom: 15px;">
+                                <input type="checkbox" value="fa-brands fa-node-js" id="input-nodejs">
+                                <label >Node Js</label>
+                            </div> 
+                            
+                            <div>
+                                <input type="checkbox" value="fa-brands fa-react" id="input-react">
+                                <label>React Js</label>
+                                
+                            </div>
+                        </div>
+                        <div style="padding-top: 15px;">
+                            <div style="padding-bottom: 15px;">
+                                <input type="checkbox" value="fa-solid fa-circle-arrow-right"  id="input-nextjs">
+                                <label>Next Js</label>
+                                
+                            </div>
+                            <div>
+                                <input type="checkbox" value="fa-solid fa-typewriter" id="input-typescript">
+                                <label>TypeScript</label>
+                            </div>
+                        </div>
+                    </div>    
+                </div>
+
+                <div class="area-upload-image">
+                    <label>Upload Image</label>
+                    <div class="upload-image">
+                        <label for="input-project-image">
+                            <p>Choose</p>
+                            <i class="fa-solid fa-paperclip"></i>
+                            <input type="file" id="input-project-image" hidden/>
+                        </label>
+                    </div>
+                </div>
+
+                <!-- <div class="inputImage">
+                    <label>Upload Image</label>
+                    <input type="file" class="uploadImage" id="input-image" hidden>
+                </div> -->
+
+                <div class="inputSubmit" style="margin-bottom: 25px; float: right; margin-right: auto;">
+                    <button  style="
+                        border: 0px; 
+                        background-color: black; 
+                        color: white; 
+                        width: 90px; 
+                        padding: 6px 25px;
+                        border-radius: 25px;
+                        cursor: pointer;
+                        font-weight: 700;
+                        " >submit</button>
+                </div>
+                
+            </form>
+        </section>
+        <!--Akhir input blog-->
+
+        <!--Awal Output Blog-->
+        <section  class="projectList" style="background-color: white;">
+            <div class="projectContainer">
+                <h1 style="text-align: center;">MY PROJECT</h1>
+                <div class="cardContainer" id="contents" >
+
+                    
+                    <a href="detail.html" style="text-decoration: none; color: black;">
+                    <div class="card">
+                        <div>
+                            <img src="assets/blog 1.jpg" alt="" />
+                        </div>
+                        <div class="title">
+                            <h3>Dumbways Mobile App-2021</h3>
+                        </div>
+
+                        <div class="durasi">
+                            <P>durasi : 3 bulan</P>
+                        </div>
+
+                        <div class="desc">
+                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+                                Lorem Ipsum has been the industry's standard.
+                            </p>
+                        </div>
+
+                        <div class="tech">
+                            <i class="fa-brands fa-google-play"></i>
+                            <i class="fa-brands fa-android"></i>
+                            <i class="fa-brands fa-java"></i>
+                        </div>
+
+                        <div>
+                            <button  class="edit">edit</button>
+                            <button class="delete">delete</button>
+                        </div>
+                    </div>
+                    </a>
+
+                    <a href="detail.html" style="text-decoration: none; color: black;">
+                    <div class="card">
+                        <div>
+                            <img src="assets/blog 2.jpg" alt="" />
+                        </div>
+                        <div class="title">
+                            <h3>Dumbways Mobile App-2021</h3>
+                        </div>
+
+                        <div class="durasi">
+                            <P>durasi : 3 bulan</P>
+                        </div>
+
+                        <div class="desc">
+                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+                                Lorem Ipsum has been the industry's standard.
+                            </p>
+                        </div>
+
+                        <div class="tech">
+                            <i class="fa-brands fa-google-play"></i>
+                            <i class="fa-brands fa-android"></i>
+                            <i class="fa-brands fa-java"></i>
+                        </div>
+
+                        <div>
+                            <button  class="edit">edit</button>
+                            <button class="delete">delete</button>
+                        </div>
+                    </div>
+                    </a>
+                    
+                    <a href="detail.html" style="text-decoration: none; color: black;">
+                    <div class="card">
+                        <div>
+                            <img src="assets/blog 3.jpeg" alt="" />
+                        </div>
+                        <div class="title">
+                            <h3>Dumbways Mobile App-2021</h3>
+                        </div>
+
+                        <div class="durasi">
+                            <P>durasi : 3 bulan</P>
+                        </div>
+
+                        <div class="desc">
+                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+                                Lorem Ipsum has been the industry's standard.
+                            </p>
+                        </div>
+
+                        <div class="tech">
+                            <i class="fa-brands fa-google-play"></i>
+                            <i class="fa-brands fa-android"></i>
+                            <i class="fa-brands fa-java"></i>
+                        </div>
+
+                        <div>
+                            <button  class="edit">edit</button>
+                            <button class="delete">delete</button>
+                        </div>
+                    </div>
+                    </a>
+
+                    <a href="detail.html" style="text-decoration: none; color: black;">
+                    <div class="card">
+                        <div>
+                            <img src="assets/blog 4.jpg" alt="" />
+                        </div>
+                        <div class="title">
+                            <h3>Dumbways Mobile App-2021</h3>
+                        </div>
+
+                        <div class="durasi">
+                            <P>durasi : 3 bulan</P>
+                        </div>
+
+                        <div class="desc">
+                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+                                Lorem Ipsum has been the industry's standard.
+                            </p>
+                        </div>
+
+                        <div class="tech">
+                            <i class="fa-brands fa-google-play"></i>
+                            <i class="fa-brands fa-android"></i>
+                            <i class="fa-brands fa-java"></i>
+                        </div>
+
+                        <div>
+                            <button  class="edit">edit</button>
+                            <button class="delete">delete</button>
+                        </div>
+                    </div>
+                    </a>
+
+                    <a href="detail.html" style="text-decoration: none; color: black;">
+                    <div class="card">
+                        <div>
+                            <img src="assets/blog 5.jpg" alt="" />
+                        </div>
+                        <div class="title">
+                            <h3>Dumbways Web App-2021</h3>
+                        </div>
+
+                        <div class="durasi">
+                            <P>durasi : 3 bulan</P>
+                        </div>
+
+                        <div class="desc">
+                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+                                Lorem Ipsum has been the industry's standard.
+                            </p>
+                        </div>
+
+                        <div class="tech">
+                            <i class="fa-brands fa-google-play"></i>
+                            <i class="fa-brands fa-android"></i>
+                            <i class="fa-brands fa-java"></i>
+                        </div>
+
+                       <!-- <div>
+                           
+                       </div>  -->
+
+                        <div>
+                            <button  class="edit">edit</button>
+                            <button class="delete">delete</button>
+                        </div>
+                    </div>
+                    </a>
+                    
+                    
+                </div>
+            </div>
+
+        </section>
+        <!--Akhir Output Blog-->
+    </body>
+</html>
+

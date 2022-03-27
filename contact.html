@@ -1,0 +1,113 @@
+<html >
+    <head>
+        <title> Form  Contact </title>
+        <link rel="icon" type="image/x-icon" href="assets/favicon.png">
+        <link rel="stylesheet" href="contactStyle.css">
+        <script src="form.js"></script>
+    </head>
+    <body style="background-color: rgb(220,223,228);">
+        
+        <!-- Awal Navbar -->
+        <nav class="#">
+            <div class="nav-left">
+                <img src="assets/logo-DW.png" />
+                <ul>
+                    <li><a href="index.html" class="home">Home</a></li>
+                    <li><a href="project.html" class="my-project">My Project</a></li>
+                </ul>
+            </div>
+            
+            <div class="nav-right">
+                <a href="contact.html">Contact Me</a>               
+            </div>
+        </nav>
+        <!-- Akhir Navbar -->
+        <h2 style="text-align: center; margin-top: 25px;font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif">GET IN TOUCH</h2>
+
+        <form style="
+            width: 350px; 
+            margin: auto; 
+            margin-top: 35px; 
+            background-color: transparent; 
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-size:medium;
+            color: rgb(2, 1, 1);
+            font-weight: 600;">
+
+            
+        
+            <div style="margin-bottom: 25px;">
+                <label for="name">Name</label>
+                <input type="text" id="input-name" style="
+                border: 1px solid rgb(199, 199, 199);
+                width: 100%;
+                height: 35px; 
+                padding: 8px;
+                border-radius: 4px;
+                box-shadow: 3px 3px 3px rgb(206, 203, 203);">
+            </div>
+
+            <div style="margin-bottom: 25px;">
+                <Label for="email">Email</Label>
+                <input type="email" id="input-email" style="
+                border: 1px solid rgb(199, 199, 199);
+                width: 100%;
+                height: 35px; 
+                padding: 8px;
+                border-radius: 4px;
+                box-shadow: 3px 3px 3px rgb(206, 203, 203);">
+            </div>
+
+            <div style="margin-bottom: 25px;">
+                <Label for="phone">Phone Number</Label>
+                <input type="text" id="input-phone" style="
+                border: 1px solid rgb(199, 199, 199);
+                width: 100%;
+                height: 35px; 
+                padding: 8px;
+                border-radius: 4px;
+                box-shadow: 3px 3px 3px rgb(206, 203, 203);">
+            </div>
+
+            <div style="margin-bottom: 25px;">
+                <label for="subject"> Subject</label>
+                <select id="input-subject" style="
+                border: 1px solid rgb(199, 199, 199);
+                width: 100%;
+                height: 35px; 
+                padding: 8px;
+                border-radius: 4px;
+                box-shadow: 3px 3px 3px rgb(206, 203, 203);">
+                    <option>Let's Talk</option>
+                    <option>Let's Collaborate</option>
+                    <option>Let's  Join</option>
+                </select>
+            </div>
+
+            <div style="margin-bottom: 25px;">
+                <Label for="message">Your Message</Label>
+                <textarea id="input-message" style="
+                    height: 100px; width: 100%; 
+                    border-radius: 3px; resize: 
+                    none; border: 1px;
+                    border: 1px solid rgb(199, 199, 199);
+                    box-shadow: 3px 3px 3px rgb(206, 203, 203);
+                    "> </textarea>
+            </div>
+
+            <div style="margin-bottom: 25px; float: right; margin-right: auto;">
+                <button onclick="submitData()" type="button" style="
+                    border: 0px; 
+                    background-color: black; 
+                    color: white; 
+                    width: 90px; 
+                    padding: 6px;
+                    border-radius: 25px;
+                    cursor: pointer;
+                    
+                    " >submit</button>
+            </div>
+
+        </form>
+    </body>
+</html>
